@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>萌犬趣事
+</title>
+<script language="JavaScript">
+var timerID = null;
+var timerRunning = false;
+function stopclock (){
+if(timerRunning)
+clearTimeout(timerID);
+timerRunning = false;
+}
+function showtime () {
+var now = new Date();
+var hours = now.getHours();
+var minutes = now.getUTCMinutes();
+var seconds = now.setSeconds()
+var timeValue = " " + ((hours >12) ? hours -12 :hours)
+timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+timeValue += ((hours >= 10) ? " 下午" : " 上午"hours
+window.status = timeValue;
+timerID = setTimeout("showtime()"，1000);
+timerRunning = true;
+}
+function startclock () {
+	stopclock();
+	showtime();
+}
+</script>
+
+
+
+
+</head>
+<body background=����.jpg></body>
+
+<center>
+<font size=10 color=blue>萌</font>
+<font size=10 color=green>犬</font>
+<font size=10 color=red>趣</font>
+<font size=10 color=purple>事</font>
+</center>
+<a href="首页.html" target="abc"><font size=5><b>返回首页</b></font></a>
+<p>
+
+
+<td weight=50 ><embed src=数字时钟.swf width=100%></td> 
+<br>
+<center>
+<a href="http://hashiqi.goupu.com.cn/news/show-2748.html"><img src="http://www.goupu.com.cn/file/upload/201804/21/114955711.jpg"></a>
+<div class="c_bantext">
+		<div class="bantext_tit">哈士奇趁主人不注意喝下一整瓶酒，结果整只狗都瘫了</div>
+		<div class="bantext_">小编相信每一位饲养哈士奇的铲屎官都是一名“受害者”，而且都有着说不清道不明的苦要诉。但是谁让你们当初就是看中它的二呢?既然选择了饲养他们就绝对不能抛弃哦，就算他们让你再无奈你也只能痛并快乐的养着他们。</div>
+	</center>
+	</div>
+<p>
+<font size=5>
+<b>小编的话：</b>祝大家都可以和自己的狗狗生活的很好！
+
+</font>
+<form>
+	<div style="height:350px; width:600px;
+border:2px red dotted;
+bg color=pink  position:relative ;
+right:50% ;
+margin-left:200px">
+<p align="center">说说，聊聊你与狗的那些事<p>
+<p align="left">姓名
+<label>
+<input type="text" name ="textfield" size="20">
+</lable>
+</p>
+<p align="left">养狗历程
+<input type="radio" name ="xb" value="radiobutton">刚刚开始
+<input type="radio" name ="xb" value="radiobutton">1-2年
+<input type="radio" name ="xb" value="radiobutton">2年以上
+</p>
+
+<p align="left">性别
+<input type="radio" name ="xb" value="radiobutton"> 男
+<input type="radio" name ="xb" value="radiobutton"> 女
+</p>
+
+<p>
+喜欢种类
+<select name="fenyuan">
+<option value="value" >哈士奇	
+<option value="value" >金毛
+<option value="value" >中华田园犬
+<option value="value" >泰迪
+<option value="value" >松狮
+<option value="value" >其他
+
+</select
+</p>
+
+
+
+
+
+
+<p align="top">个人留言<br>
+<textarea name="ly" rows =5 cols=40 wrap="physical">
+</textarea>
+<br>
+
+
+<p>
+<center>
+<input type ="reset" name="file_name" value="重置">
+<input type ="submit" name="file_name" value="提交">
+</center>
+
+</p>
+
+	
+
+
+
+	
+</body>
+</html>
